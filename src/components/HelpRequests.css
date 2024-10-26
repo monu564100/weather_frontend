@@ -1,0 +1,67 @@
+/* HelpRequests.css */
+body {
+    background-color: #ffb3b3; /* Dark background for contrast */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+}
+
+.help-requests-container {
+    padding: 20px;
+}
+.help-requests-container > h2{
+    color: #ffb3b3;
+}
+
+.help-requests-list {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    display: flex; /* Use flexbox to display items */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between items */
+}
+
+.help-request-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(255, 0, 0, 0.2); /* Light red background for the card */
+    border: 1px solid rgba(255, 0, 0, 0.5); /* Red border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Internal padding */
+    position: relative; /* Position relative for absolute alert icon */
+    overflow: hidden; /* To prevent overflow of alert icon */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Add shadow to card */
+}
+
+.help-request-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: rgba(149, 147, 41, 0.2); /* Change background to light green on hover */
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.8); /* Add neon green shadow on hover */
+}
+
+.alert-icon {
+    background-color: red; /* Red background for alert icon */
+    color: white; /* White text for icon */
+    font-size: 24px; /* Increase icon size */
+    width: 40px; /* Fixed width for icon */
+    height: 40px; /* Fixed height for icon */
+    display: flex; /* Center icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Glow effect for icon */
+    position: absolute; /* Positioning of icon */
+    top: -10px; /* Position above the box */
+    left: -10px; /* Position to the left */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.request-details {
+    margin-left: 50px; /* Space for the alert icon */
+    z-index: 0; /* Set details below the icon */
+    flex: 1; /* Allow details to take up available space */
+}
+
+.request-details p {
+    margin: 5px 0; /* Add some spacing between paragraphs */
+}

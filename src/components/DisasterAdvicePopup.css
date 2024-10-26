@@ -1,0 +1,68 @@
+.advice-popup {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* src/components/DisasterAdvicePopup.css */
+/* src/components/DisasterAdvicePopup.css */
+
+.bubble-icon {
+  position: fixed; /* Positioning the bubble icon */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Change from left to right for bottom right corner */
+  font-size: 3rem;
+  color: #00FF00; /* Neon green color */
+  background-color: rgba(0, 255, 0, 0.7); /* Translucent neon green background */
+  border-radius: 50%; /* Makes the background circular */
+  padding: 20px; /* Space around the icon */
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7),  /* Black shadow */
+              0 0 40px rgba(0, 255, 0, 0.5); /* Neon effect */
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: transform 0.3s; /* Smooth transform on hover */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.bubble-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.bubble-icon-text {
+  font-weight: bold; /* Bold text */
+  font-size: 1.5rem; /* Adjust text size */
+  color: #FFFFFF; /* Text color inside the bubble */
+}
+
+.expanded-box > .cancel-icon {
+  position: absolute; /* Position it in the expanded box */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  color: #db6b6b; /* Color for the cancel button */
+}
+  
+  .expanded-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+   
